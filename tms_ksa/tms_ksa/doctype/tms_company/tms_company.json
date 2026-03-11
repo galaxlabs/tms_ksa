@@ -8,9 +8,9 @@
   "status",
   "basic_identity_section",
   "company_name",
-  "legal_name_ar",
+  "company_name_ar",
   "column_break_vcdu",
-  "short_name",
+  "company_code",
   "business_type",
   "company_category",
   "contact_information_section",
@@ -26,7 +26,8 @@
   "address_line_2",
   "region",
   "city",
-  "registration_and_compliance_section",
+  "whatsapp_no",
+  "compliance_section",
   "license_expiry_date",
   "compliance_notes",
   "column_break_ltct",
@@ -34,7 +35,7 @@
   "location_map_url",
   "vat_registration_no",
   "national_address",
-  "subscription_and_access_section",
+  "subscription_access_section",
   "subscription_plan",
   "subscription_status",
   "subscription_start_date",
@@ -113,11 +114,6 @@
    "unique": 1
   },
   {
-   "fieldname": "legal_name_ar",
-   "fieldtype": "Data",
-   "label": "Legal Name (Arabic)"
-  },
-  {
    "fieldname": "contact_person_name",
    "fieldtype": "Data",
    "label": "Contact Person Name"
@@ -166,13 +162,6 @@
   {
    "fieldname": "column_break_vcdu",
    "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "short_name",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Short Name",
-   "unique": 1
   },
   {
    "fieldname": "business_type",
@@ -481,19 +470,9 @@
    "label": "Credit Note Prefix"
   },
   {
-   "fieldname": "registration_and_compliance_section",
-   "fieldtype": "Section Break",
-   "label": "Registration and Compliance"
-  },
-  {
    "fieldname": "financial_defaults_section",
    "fieldtype": "Section Break",
    "label": "Financial Defaults"
-  },
-  {
-   "fieldname": "subscription_and_access_section",
-   "fieldtype": "Section Break",
-   "label": "Subscription and Access"
   },
   {
    "fieldname": "operations_rules_section",
@@ -518,12 +497,12 @@
   {
    "fieldname": "company_logo",
    "fieldtype": "Attach Image",
-   "label": "Company Logo"
+   "label": "company_logo"
   },
   {
    "fieldname": "print_address_block",
    "fieldtype": "Small Text",
-   "label": "Print Address Block"
+   "label": "print_address_block"
   },
   {
    "fieldname": "column_break_egmi",
@@ -532,49 +511,76 @@
   {
    "fieldname": "company_stamp_image",
    "fieldtype": "Attach Image",
-   "label": "Company Stamp Image"
+   "label": "company_stamp_image"
   },
   {
    "fieldname": "print_contact_block",
    "fieldtype": "Small Text",
-   "label": "Print Contact Block"
+   "label": "print_contact_block"
   },
   {
    "fieldname": "invoice_footer_html",
    "fieldtype": "Text Editor",
-   "label": "Invoice Footer HTML"
+   "label": "invoice_footer_html"
   },
   {
    "fieldname": "invoice_header_html",
    "fieldtype": "Text Editor",
-   "label": "Invoice Header HTML"
+   "label": "invoice_header_html"
   },
   {
    "fieldname": "vat_display_name",
    "fieldtype": "Data",
-   "label": "VAT Display Name"
+   "label": "vat_display_name"
   },
   {
    "fieldname": "company_stamp_text",
    "fieldtype": "Data",
-   "label": "Company Stamp Text"
+   "label": "company_stamp_text"
   },
   {
    "fieldname": "account_type",
    "fieldtype": "Select",
-   "label": "Account Type",
+   "label": "account_type",
    "options": "Company\nIndividual Operator\nPartner\nAgent"
   },
   {
    "fieldname": "terms_and_conditions_text",
    "fieldtype": "Text Editor",
-   "label": "Terms and Conditions Text"
+   "label": "terms_and_conditions_text"
+  },
+  {
+   "fieldname": "compliance_section",
+   "fieldtype": "Section Break",
+   "label": "Compliance"
+  },
+  {
+   "fieldname": "subscription_access_section",
+   "fieldtype": "Section Break",
+   "label": "Subscription / access"
+  },
+  {
+   "fieldname": "company_name_ar",
+   "fieldtype": "Data",
+   "label": "Company Name (Arabic)"
+  },
+  {
+   "fieldname": "company_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Company Code",
+   "unique": 1
+  },
+  {
+   "fieldname": "whatsapp_no",
+   "fieldtype": "Data",
+   "label": "Whatsapp No"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-03-11 16:54:24.107165",
+ "modified": "2026-03-11 17:24:13.816646",
  "modified_by": "Administrator",
  "module": "Tms Ksa",
  "name": "TMS Company",
@@ -596,7 +602,7 @@
  ],
  "row_format": "Dynamic",
  "rows_threshold_for_grid_search": 20,
- "search_fields": "company_name, short_name, mobile_no, email, commercial_registration_no",
+ "search_fields": "company_name, company_code, mobile_no, email, commercial_registration_no",
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": []
