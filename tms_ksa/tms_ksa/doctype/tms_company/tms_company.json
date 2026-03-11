@@ -1,0 +1,603 @@
+{
+ "actions": [],
+ "autoname": "field:company_name",
+ "creation": "2026-03-11 02:42:34.626453",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "status",
+  "basic_identity_section",
+  "company_name",
+  "legal_name_ar",
+  "column_break_vcdu",
+  "short_name",
+  "business_type",
+  "company_category",
+  "contact_information_section",
+  "contact_person_name",
+  "mobile_no",
+  "alternate_mobile_no",
+  "address_line_1",
+  "country",
+  "postal_code",
+  "column_break_wccp",
+  "email",
+  "website",
+  "address_line_2",
+  "region",
+  "city",
+  "registration_and_compliance_section",
+  "license_expiry_date",
+  "compliance_notes",
+  "column_break_ltct",
+  "commercial_registration_no",
+  "location_map_url",
+  "vat_registration_no",
+  "national_address",
+  "subscription_and_access_section",
+  "subscription_plan",
+  "subscription_status",
+  "subscription_start_date",
+  "subscription_end_date",
+  "column_break_ewan",
+  "allow_telegram_bot",
+  "allow_api_access",
+  "allow_ai_assistant",
+  "local_llm_enabled",
+  "cloud_llm_enabled",
+  "preferred_llm_provider",
+  "financial_defaults_section",
+  "default_currency",
+  "default_tax_mode",
+  "default_vat_rate",
+  "payment_terms_days",
+  "column_break_mlkl",
+  "invoice_prefix",
+  "receipt_prefix",
+  "credit_note_prefix",
+  "allow_service_invoice_without_items",
+  "bypass_stock_validation_for_services",
+  "allow_partial_payment",
+  "allow_postpaid_customers",
+  "operations_rules_section",
+  "default_booking_mode",
+  "default_trip_direction_mode",
+  "default_passenger_pricing_mode",
+  "column_break_zxnb",
+  "allow_custom_route_request",
+  "require_route_approval_for_custom_request",
+  "booking_confirmation_required",
+  "payment_confirmation_required",
+  "trip_closure_required",
+  "system_isolation_section",
+  "data_isolation_key",
+  "owner_user",
+  "column_break_cyga",
+  "is_active_company",
+  "is_demo_company",
+  "notes_internal_control_section",
+  "internal_notes",
+  "last_subscription_check_on",
+  "last_ai_usage_sync_on",
+  "disabled_reason",
+  "section_break_wcgp",
+  "company_logo",
+  "print_address_block",
+  "invoice_footer_html",
+  "vat_display_name",
+  "company_stamp_text",
+  "account_type",
+  "column_break_egmi",
+  "company_stamp_image",
+  "print_contact_block",
+  "invoice_header_html",
+  "terms_and_conditions_text"
+ ],
+ "fields": [
+  {
+   "default": "Draft",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "Draft\nActive\nSuspended\nExpired\nDisabled"
+  },
+  {
+   "fieldname": "company_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Company Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "legal_name_ar",
+   "fieldtype": "Data",
+   "label": "Legal Name (Arabic)"
+  },
+  {
+   "fieldname": "contact_person_name",
+   "fieldtype": "Data",
+   "label": "Contact Person Name"
+  },
+  {
+   "fieldname": "mobile_no",
+   "fieldtype": "Data",
+   "label": "Mobile Number"
+  },
+  {
+   "fieldname": "alternate_mobile_no",
+   "fieldtype": "Data",
+   "label": "Alternate Mobile Number"
+  },
+  {
+   "fieldname": "address_line_1",
+   "fieldtype": "Data",
+   "label": "Address Line 1"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "City"
+  },
+  {
+   "default": "Saudi Arabia",
+   "fieldname": "country",
+   "fieldtype": "Data",
+   "label": "Country"
+  },
+  {
+   "fieldname": "commercial_registration_no",
+   "fieldtype": "Data",
+   "label": "Commercial Registration Number"
+  },
+  {
+   "fieldname": "vat_registration_no",
+   "fieldtype": "Data",
+   "label": "VAT Registration Number"
+  },
+  {
+   "fieldname": "license_expiry_date",
+   "fieldtype": "Date",
+   "label": "License Expiry Date"
+  },
+  {
+   "fieldname": "column_break_vcdu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "short_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Short Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "business_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Business Type",
+   "options": "Transport Operator\nTravel Booking\nCorporate Staff Transport\nSchool Transport\nRental Transport\nLogistics Support\nMixed Services\nOther"
+  },
+  {
+   "fieldname": "company_category",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Company Category",
+   "options": "Single Branch\nMulti Branch\nAgent\nAggregator\nPartner\nInternal Operations"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "website",
+   "fieldtype": "Data",
+   "label": "Website"
+  },
+  {
+   "fieldname": "address_line_2",
+   "fieldtype": "Data",
+   "label": "Address Line 2"
+  },
+  {
+   "fieldname": "region",
+   "fieldtype": "Data",
+   "label": "Region"
+  },
+  {
+   "fieldname": "postal_code",
+   "fieldtype": "Data",
+   "label": "Postal Code"
+  },
+  {
+   "fieldname": "location_map_url",
+   "fieldtype": "Small Text",
+   "label": "Location Map URL"
+  },
+  {
+   "fieldname": "national_address",
+   "fieldtype": "Small Text",
+   "label": "National Address"
+  },
+  {
+   "fieldname": "compliance_notes",
+   "fieldtype": "Small Text",
+   "label": "Compliance Notes"
+  },
+  {
+   "fieldname": "subscription_plan",
+   "fieldtype": "Select",
+   "label": "Subscription Plan",
+   "options": "Trial\nBasic\nStandard\nPremium\nEnterprise\nCustom"
+  },
+  {
+   "fieldname": "subscription_start_date",
+   "fieldtype": "Date",
+   "label": "Subscription Start Date"
+  },
+  {
+   "fieldname": "subscription_status",
+   "fieldtype": "Select",
+   "label": "Subscription Status",
+   "options": "Trial\nActive\nGrace Period\nExpired\nSuspended\nCancelled"
+  },
+  {
+   "fieldname": "subscription_end_date",
+   "fieldtype": "Date",
+   "label": "Subscription End Date"
+  },
+  {
+   "fieldname": "column_break_ewan",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "1",
+   "fieldname": "allow_telegram_bot",
+   "fieldtype": "Check",
+   "label": "Allow Telegram Bot"
+  },
+  {
+   "default": "0",
+   "fieldname": "allow_api_access",
+   "fieldtype": "Check",
+   "label": "Allow API Access"
+  },
+  {
+   "default": "0",
+   "fieldname": "allow_ai_assistant",
+   "fieldtype": "Check",
+   "label": "Allow AI Assistant"
+  },
+  {
+   "default": "0",
+   "fieldname": "local_llm_enabled",
+   "fieldtype": "Check",
+   "label": "Local LLM Enabled"
+  },
+  {
+   "default": "0",
+   "fieldname": "cloud_llm_enabled",
+   "fieldtype": "Check",
+   "label": "Cloud LLM Enabled"
+  },
+  {
+   "fieldname": "preferred_llm_provider",
+   "fieldtype": "Select",
+   "label": "Preferred LLM Provider",
+   "options": "Local\nOpenRouter\nOpenAI\nAnthropic\nGoogle\nOther"
+  },
+  {
+   "default": "SAR",
+   "fieldname": "default_currency",
+   "fieldtype": "Data",
+   "label": "Default Currency"
+  },
+  {
+   "fieldname": "default_tax_mode",
+   "fieldtype": "Select",
+   "label": "Default Tax Mode",
+   "options": "Tax Exclusive\nTax Inclusive\nNo Tax"
+  },
+  {
+   "fieldname": "default_vat_rate",
+   "fieldtype": "Percent",
+   "label": "Default VAT Rate"
+  },
+  {
+   "fieldname": "column_break_mlkl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "INV",
+   "fieldname": "invoice_prefix",
+   "fieldtype": "Data",
+   "label": "Invoice Prefix"
+  },
+  {
+   "default": "RCT",
+   "fieldname": "receipt_prefix",
+   "fieldtype": "Data",
+   "label": "Receipt Prefix"
+  },
+  {
+   "default": "1",
+   "fieldname": "allow_service_invoice_without_items",
+   "fieldtype": "Check",
+   "label": "Allow Service Invoice Without Items"
+  },
+  {
+   "default": "1",
+   "fieldname": "bypass_stock_validation_for_services",
+   "fieldtype": "Check",
+   "label": "Bypass Stock Validation For Services"
+  },
+  {
+   "fieldname": "payment_terms_days",
+   "fieldtype": "Int",
+   "label": "Payment Terms Days"
+  },
+  {
+   "default": "1",
+   "fieldname": "allow_partial_payment",
+   "fieldtype": "Check",
+   "label": "Allow Partial Payment"
+  },
+  {
+   "default": "1",
+   "fieldname": "allow_postpaid_customers",
+   "fieldtype": "Check",
+   "label": "Allow Postpaid Customers"
+  },
+  {
+   "fieldname": "default_booking_mode",
+   "fieldtype": "Select",
+   "label": "Default Booking Mode",
+   "options": "Manual\nTelegram\nAPI\nMixed"
+  },
+  {
+   "fieldname": "column_break_zxnb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "1",
+   "fieldname": "allow_custom_route_request",
+   "fieldtype": "Check",
+   "label": "Allow Custom Route Request"
+  },
+  {
+   "default": "1",
+   "fieldname": "require_route_approval_for_custom_request",
+   "fieldtype": "Check",
+   "label": "Require Route Approval For Custom Request"
+  },
+  {
+   "fieldname": "default_trip_direction_mode",
+   "fieldtype": "Select",
+   "label": "Default Trip Direction Mode",
+   "options": "One Way\nReturn\nBoth"
+  },
+  {
+   "fieldname": "default_passenger_pricing_mode",
+   "fieldtype": "Select",
+   "label": "Default Passenger Pricing Mode",
+   "options": "Flat\nPer Passenger\nPer Vehicle\nRoute + Vehicle + Passenger\nManual"
+  },
+  {
+   "default": "1",
+   "fieldname": "booking_confirmation_required",
+   "fieldtype": "Check",
+   "label": "Booking Confirmation Required"
+  },
+  {
+   "default": "1",
+   "fieldname": "payment_confirmation_required",
+   "fieldtype": "Check",
+   "label": "Payment Confirmation Required"
+  },
+  {
+   "default": "1",
+   "fieldname": "trip_closure_required",
+   "fieldtype": "Check",
+   "label": "Trip Closure Required"
+  },
+  {
+   "fieldname": "basic_identity_section",
+   "fieldtype": "Section Break",
+   "label": "Basic Identity"
+  },
+  {
+   "fieldname": "column_break_wccp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_ltct",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "contact_information_section",
+   "fieldtype": "Section Break",
+   "label": "Contact Information"
+  },
+  {
+   "fieldname": "data_isolation_key",
+   "fieldtype": "Data",
+   "label": "Data Isolation Key",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_cyga",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_active_company",
+   "fieldtype": "Check",
+   "label": "Is Active Company",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "is_demo_company",
+   "fieldtype": "Check",
+   "label": "Is Demo Company"
+  },
+  {
+   "default": "__user",
+   "fieldname": "owner_user",
+   "fieldtype": "Link",
+   "label": "Owner User",
+   "options": "User"
+  },
+  {
+   "fieldname": "internal_notes",
+   "fieldtype": "Text Editor",
+   "label": "Internal Notes"
+  },
+  {
+   "fieldname": "last_subscription_check_on",
+   "fieldtype": "Datetime",
+   "label": "Last Subscription Check On",
+   "read_only": 1
+  },
+  {
+   "fieldname": "last_ai_usage_sync_on",
+   "fieldtype": "Datetime",
+   "label": "Last AI Usage Sync On",
+   "read_only": 1
+  },
+  {
+   "fieldname": "disabled_reason",
+   "fieldtype": "Small Text",
+   "label": "Disabled Reason"
+  },
+  {
+   "default": "CN",
+   "fieldname": "credit_note_prefix",
+   "fieldtype": "Data",
+   "label": "Credit Note Prefix"
+  },
+  {
+   "fieldname": "registration_and_compliance_section",
+   "fieldtype": "Section Break",
+   "label": "Registration and Compliance"
+  },
+  {
+   "fieldname": "financial_defaults_section",
+   "fieldtype": "Section Break",
+   "label": "Financial Defaults"
+  },
+  {
+   "fieldname": "subscription_and_access_section",
+   "fieldtype": "Section Break",
+   "label": "Subscription and Access"
+  },
+  {
+   "fieldname": "operations_rules_section",
+   "fieldtype": "Section Break",
+   "label": "Operations Rules"
+  },
+  {
+   "fieldname": "system_isolation_section",
+   "fieldtype": "Section Break",
+   "label": "System Isolation"
+  },
+  {
+   "fieldname": "notes_internal_control_section",
+   "fieldtype": "Section Break",
+   "label": "Notes / Internal Control"
+  },
+  {
+   "fieldname": "section_break_wcgp",
+   "fieldtype": "Section Break",
+   "label": "Brand Section"
+  },
+  {
+   "fieldname": "company_logo",
+   "fieldtype": "Attach Image",
+   "label": "Company Logo"
+  },
+  {
+   "fieldname": "print_address_block",
+   "fieldtype": "Small Text",
+   "label": "Print Address Block"
+  },
+  {
+   "fieldname": "column_break_egmi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "company_stamp_image",
+   "fieldtype": "Attach Image",
+   "label": "Company Stamp Image"
+  },
+  {
+   "fieldname": "print_contact_block",
+   "fieldtype": "Small Text",
+   "label": "Print Contact Block"
+  },
+  {
+   "fieldname": "invoice_footer_html",
+   "fieldtype": "Text Editor",
+   "label": "Invoice Footer HTML"
+  },
+  {
+   "fieldname": "invoice_header_html",
+   "fieldtype": "Text Editor",
+   "label": "Invoice Header HTML"
+  },
+  {
+   "fieldname": "vat_display_name",
+   "fieldtype": "Data",
+   "label": "VAT Display Name"
+  },
+  {
+   "fieldname": "company_stamp_text",
+   "fieldtype": "Data",
+   "label": "Company Stamp Text"
+  },
+  {
+   "fieldname": "account_type",
+   "fieldtype": "Select",
+   "label": "Account Type",
+   "options": "Company\nIndividual Operator\nPartner\nAgent"
+  },
+  {
+   "fieldname": "terms_and_conditions_text",
+   "fieldtype": "Text Editor",
+   "label": "Terms and Conditions Text"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-03-11 16:54:24.107165",
+ "modified_by": "Administrator",
+ "module": "Tms Ksa",
+ "name": "TMS Company",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "search_fields": "company_name, short_name, mobile_no, email, commercial_registration_no",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

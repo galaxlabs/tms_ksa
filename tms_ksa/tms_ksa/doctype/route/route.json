@@ -1,0 +1,128 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:route_code",
+ "creation": "2026-03-11 05:06:39.498921",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "from_city",
+  "to_city",
+  "duration_minutes",
+  "from_place_full",
+  "to_place_full",
+  "column_break_ntsd",
+  "has_return",
+  "distance",
+  "duration",
+  "avg_speed_kmph",
+  "return_route",
+  "route_code",
+  "from_city_code",
+  "to_city_code"
+ ],
+ "fields": [
+  {
+   "fieldname": "from_city",
+   "fieldtype": "Data",
+   "label": "From City"
+  },
+  {
+   "fieldname": "to_city",
+   "fieldtype": "Data",
+   "label": "To City"
+  },
+  {
+   "fieldname": "duration_minutes",
+   "fieldtype": "Int",
+   "label": "Duration Minutes"
+  },
+  {
+   "fieldname": "from_place_full",
+   "fieldtype": "Small Text",
+   "label": "From Place Name"
+  },
+  {
+   "fieldname": "to_place_full",
+   "fieldtype": "Small Text",
+   "label": "To Place Name",
+   "length": 255
+  },
+  {
+   "fieldname": "column_break_ntsd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "has_return",
+   "fieldtype": "Check",
+   "label": "Has Return"
+  },
+  {
+   "fieldname": "distance",
+   "fieldtype": "Float",
+   "label": "Distance"
+  },
+  {
+   "fieldname": "duration",
+   "fieldtype": "Data",
+   "label": "Duration"
+  },
+  {
+   "fieldname": "avg_speed_kmph",
+   "fieldtype": "Float",
+   "label": "Avg Speed (km/h)\""
+  },
+  {
+   "fieldname": "return_route",
+   "fieldtype": "Link",
+   "label": "Return Rout",
+   "options": "Route"
+  },
+  {
+   "fieldname": "route_code",
+   "fieldtype": "Data",
+   "label": "Route Code",
+   "unique": 1
+  },
+  {
+   "fieldname": "from_city_code",
+   "fieldtype": "Data",
+   "label": "From City Code",
+   "read_only": 1
+  },
+  {
+   "fieldname": "to_city_code",
+   "fieldtype": "Data",
+   "label": "To City Code",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-03-11 05:46:04.058586",
+ "modified_by": "Administrator",
+ "module": "Tms Ksa",
+ "name": "Route",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
